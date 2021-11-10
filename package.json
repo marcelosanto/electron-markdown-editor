@@ -1,6 +1,21 @@
 {
-  "name": "vite-electron-builder",
+  "name": "react-electron-markdown-editor",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://github.com/marcelosanto/electron-markdown-editor.git"
+  },
+  "keywords": [
+    "React",
+    "Markdown",
+    "remark",
+    "CodeMirror",
+    "Electron",
+    "Vite",
+    "TypeScript"
+  ],
+  "author": "Marcelo Santos",
+  "license": "MIT",
   "engines": {
     "node": ">=v16.13",
     "npm": ">=8.1"
@@ -16,6 +31,7 @@
     "lint": "eslint . --ext js,ts",
     "typecheck-main": "tsc --noEmit -p packages/main/tsconfig.json",
     "typecheck-preload": "tsc --noEmit -p packages/preload/tsconfig.json",
+    "typecheck-renderer": "tsc --noEmit -p packages/renderer/tsconfig.json",
     "typecheck": "npm run typecheck-main && npm run typecheck-preload && npm run typecheck-renderer"
   },
   "browserslist": [
